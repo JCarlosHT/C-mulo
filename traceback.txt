@@ -1,0 +1,20 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+After initialization, but before game start.
+WindowsError: [Error 32] El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Users\juan\Desktop\renpy-6.99.14.3-sdk\renpy\bootstrap.py", line 306, in bootstrap
+    renpy.main.main()
+  File "C:\Users\juan\Desktop\renpy-6.99.14.3-sdk\renpy\main.py", line 469, in main
+    renpy.dump.dump(False)
+  File "C:\Users\juan\Desktop\renpy-6.99.14.3-sdk\renpy\dump.py", line 253, in dump
+    os.rename(new, args.json_dump)
+WindowsError: [Error 32] El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+
+Windows-7-6.1.7601-SP1
+Ren'Py 6.99.14.3.3347
+Cumulo 1.1
+Mon Jun 18 16:09:18 2018
