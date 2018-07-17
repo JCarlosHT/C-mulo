@@ -1,20 +1,48 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-WindowsError: [Error 32] El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+While running game code:
+  File "game/script.rpy", line 28, in script
+    e"Bienvenido jugador, mi nombre es Sergio"
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+IOError: Couldn't find file 'music/Take Me Somewhere Nice.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\juan\Desktop\renpy-6.99.14.3-sdk\renpy\bootstrap.py", line 306, in bootstrap
-    renpy.main.main()
-  File "C:\Users\juan\Desktop\renpy-6.99.14.3-sdk\renpy\main.py", line 469, in main
-    renpy.dump.dump(False)
-  File "C:\Users\juan\Desktop\renpy-6.99.14.3-sdk\renpy\dump.py", line 253, in dump
-    os.rename(new, args.json_dump)
-WindowsError: [Error 32] El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+  File "game/script.rpy", line 28, in script
+    e"Bienvenido jugador, mi nombre es Sergio"
+  File "C:\Users\juan\Desktop\renpy-6.99.14.3-sdk\renpy\ast.py", line 618, in execute
+    statement_name("say")
+  File "C:\Users\juan\Desktop\renpy-6.99.14.3-sdk\renpy\ast.py", line 43, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+  File "C:\Users\juan\Desktop\renpy-6.99.14.3-sdk\renpy\exports.py", line 1413, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\juan\Desktop\renpy-6.99.14.3-sdk\renpy\display\core.py", line 2193, in do_with
+    clear=clear)
+  File "C:\Users\juan\Desktop\renpy-6.99.14.3-sdk\renpy\display\core.py", line 2635, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\juan\Desktop\renpy-6.99.14.3-sdk\renpy\display\core.py", line 3304, in interact_core
+    renpy.audio.audio.periodic()
+  File "C:\Users\juan\Desktop\renpy-6.99.14.3-sdk\renpy\audio\audio.py", line 976, in periodic_thread_main
+    periodic_pass()
+  File "C:\Users\juan\Desktop\renpy-6.99.14.3-sdk\renpy\audio\audio.py", line 920, in periodic_pass
+    c.periodic()
+  File "C:\Users\juan\Desktop\renpy-6.99.14.3-sdk\renpy\audio\audio.py", line 409, in periodic
+    topf = load(self.file_prefix + filename + self.file_suffix)
+  File "C:\Users\juan\Desktop\renpy-6.99.14.3-sdk\renpy\audio\audio.py", line 69, in load
+    rv = renpy.loader.load(fn)
+  File "C:\Users\juan\Desktop\renpy-6.99.14.3-sdk\renpy\loader.py", line 555, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'music/Take Me Somewhere Nice.mp3'.
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.14.3.3347
 Cumulo 1.1
-Mon Jun 18 16:09:18 2018
+Thu Jul 05 14:58:11 2018

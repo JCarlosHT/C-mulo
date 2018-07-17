@@ -256,7 +256,7 @@ screen quick_menu():
 
             textbutton _("Regresar") action Rollback()
             textbutton _("Historia") action ShowMenu('history')
-            textbutton _("Salir") action Skip() alternate Skip(fast=True, confirm=True)
+            textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("guardar") action ShowMenu('save')
             textbutton _("A.Guardado") action QuickSave()
