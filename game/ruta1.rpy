@@ -4,6 +4,9 @@ label ruta1:
     scene barcito with dissolve
     scene lluvia with fade
     play music "music/Lluvia.mp3" fadein 2.0
+    show alice1:
+        xalign 0
+        yalign 1.0
     e"Ey, ¿Por qué no estas en la fiesta?"
     a"No me gustan las fiestas"
     a"nunca se que hacer con las manos prefiero ver la lluvia "
@@ -11,7 +14,8 @@ label ruta1:
     scene negro with fade
     e"Te entiendo…¿Cómo te llamas?"
     a"Alicia, puedes llamarme Alice"
-    e"Mucho gusto, Sergio. ¿Quieres ir a otro lado a ver la lluvia?"
+    e"Mucho gusto Alice"
+    e"yo soy Sergio. \n¿Que dices si vamos a ver la lluvia en otro lugar?"
     a"Claro… why not?"
     stop music
     $ renpy.movie_cutscene("videos/cigarro.mpg")
