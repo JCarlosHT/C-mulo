@@ -1,64 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'gui/game_menu.png'>:
-IOError: Couldn't find file 'gui/game_menu.png'.
+While running game code:
+  File "game/capi3-rt1.rpy", line 5, in script
+    scene negro with fate
+  File "game/capi3-rt1.rpy", line 5, in <module>
+    scene negro with fate
+NameError: name 'fate' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/_layout/screen_load_save.rpym", line 35, in script
-    $ ui.interact()
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\ast.py", line 862, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\python.py", line 1888, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "renpy/common/_layout/screen_load_save.rpym", line 35, in <module>
-    $ ui.interact()
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\ui.py", line 287, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\display\core.py", line 2635, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\display\core.py", line 3118, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\display\core.py", line 2041, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 485, in renpy.display.render.render_screen
-  File "render.pyx", line 233, in renpy.display.render.render
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\display\layout.py", line 717, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 145, in renpy.display.render.render
-  File "render.pyx", line 233, in renpy.display.render.render
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\display\transition.py", line 361, in render
-    top = render(self.new_widget, width, height, st, at)
-  File "render.pyx", line 145, in renpy.display.render.render
-  File "render.pyx", line 233, in renpy.display.render.render
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\display\layout.py", line 717, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 145, in renpy.display.render.render
-  File "render.pyx", line 233, in renpy.display.render.render
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\display\layout.py", line 717, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 145, in renpy.display.render.render
-  File "render.pyx", line 233, in renpy.display.render.render
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\display\screen.py", line 661, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 145, in renpy.display.render.render
-  File "render.pyx", line 233, in renpy.display.render.render
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\display\layout.py", line 717, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 145, in renpy.display.render.render
-  File "render.pyx", line 233, in renpy.display.render.render
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\display\im.py", line 580, in render
-    return cache.get(self, render=True)
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\display\im.py", line 266, in get
-    surf = image.load()
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\display\im.py", line 625, in load
-    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\loader.py", line 555, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'gui/game_menu.png'.
+  File "game/capi3-rt1.rpy", line 5, in script
+    scene negro with fate
+  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\ast.py", line 1333, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\python.py", line 1919, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\python.py", line 1912, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/capi3-rt1.rpy", line 5, in <module>
+    scene negro with fate
+NameError: name 'fate' is not defined
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.14.3.3347
 Cumulo 1.1
-Tue Jul 17 19:25:44 2018
+Thu Aug 02 10:00:56 2018

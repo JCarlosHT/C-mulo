@@ -15,7 +15,7 @@ label splashscreen:
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-define e = Character("sergio", who_color="#c8ffc8", what_size=34)
+define e = Character("Charly", who_color="#c8ffc8", what_size=34)
 
 
 # The game starts here.
@@ -25,26 +25,26 @@ label start:
     play music "music/Take Me Somewhere Nice.mp3" fadein 2.0
     scene barcito
     show sujeto1
-    e"Bienvenido jugador, mi nombre es Sergio"
-    e"es un placer darle la bienvenida a cumulo"
+    "Bienvenido jugador, mi nombre es [e]"
+    e"Es un placer darle la bienvenida a Cúmulo"
     hide sujeto1
     show sujeto2
-    e "esta es una historia desalentadora."
+    e "Esta es una historia desalentadora."
 
-    e "llena de dolor y muerte...."
+    e "Llena de dolor y muerte...."
     hide sujeto2
 
     show sujeto3
     e"Espero la puedas disfrutar"
-    e "te deseo lo mejor."
-    e"¿listo para comensar?"
+    e "Te deseo lo mejor."
+    e"¿Listo para comenzar?"
     hide sujeto3
     menu:
-        "si":
+        "Sí":
             stop music
             $ renpy.movie_cutscene("videos/CumuloCapitulo1.mpg")
             jump ruta1
-        "no":
-            e"entonces no tendremos opciones"
+        "No":
+            e"Entonces no tendremos opciones"
 
     return
