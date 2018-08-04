@@ -22,7 +22,7 @@ label ruta1:
     scene negro with fade
     show mano
     e"Te entiendo…¿Cómo te llamas?"
-    "puedes llamarme [a]"
+    "Puedes llamarme [a]"
     e"Mucho gusto [a]"
     e"yo soy [e]. \n¿Que dices si vamos a ver la lluvia en otro lugar?"
     a"Claro… why not?"
@@ -45,13 +45,14 @@ label ruta1:
     scene negro with dissolve
     $ renpy.movie_cutscene("videos/reloj1.mpg")
     scene negro2 fade
-    s "[e], ¿Ya escucharas mi propuesta?"
     show posesion1
-    ""
+    s "[e], ¿Ya escucharas mi propuesta?"
     menu:
         "Escucharlo":
+                        hide posesion1
                         jump ruta1esc
         "Cállate carajo":
+                        hide posesion1
                         s"Ok,ok le diré a [a] que no quieres…"
                         show sujeto2
                         e"¿Qué dices?"

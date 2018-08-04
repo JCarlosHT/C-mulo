@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/ruta1-1.rpy", line 22: expected statement.
-    game over1
-              ^
+File "game/ruta1esc.rpy", line 8: expected 'image_name_component' not found.
+    hide
+        ^
 
 Ren'Py Version: Ren'Py 6.99.14.3.3347
-Thu Aug 02 00:09:00 2018
+Sat Aug 04 14:23:24 2018

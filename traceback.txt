@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/capi3-rt1.rpy", line 5, in script
-    scene negro with fate
-  File "game/capi3-rt1.rpy", line 5, in <module>
-    scene negro with fate
-NameError: name 'fate' is not defined
+  File "game/capi3-rt1.rpy", line 13, in script
+    S "Ok aquí tienes unas pistola, te puede servir "
+Exception: Sayer 'S' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/capi3-rt1.rpy", line 5, in script
-    scene negro with fate
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\ast.py", line 1333, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\python.py", line 1919, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\python.py", line 1912, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/capi3-rt1.rpy", line 5, in <module>
-    scene negro with fate
-NameError: name 'fate' is not defined
+  File "game/capi3-rt1.rpy", line 13, in script
+    S "Ok aquí tienes unas pistola, te puede servir "
+  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\ast.py", line 624, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\ast.py", line 537, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'S' is not defined.
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.14.3.3347
 Cumulo 1.1
-Thu Aug 02 10:00:56 2018
+Sat Aug 04 14:58:39 2018
