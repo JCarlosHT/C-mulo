@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/ruta1esc.rpy", line 8: expected 'image_name_component' not found.
-    hide
+File "game/capi3-rt1.rpy", line 18: expected 'image_name_component' not found.
+    show scene negro with fade
         ^
 
 Ren'Py Version: Ren'Py 6.99.14.3.3347
-Sat Aug 04 14:23:24 2018
+Sat Aug 04 19:00:53 2018

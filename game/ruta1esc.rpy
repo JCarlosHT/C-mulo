@@ -11,7 +11,8 @@ label ruta1esc:
     show jesse1:
         xalign 0
         yalign 1.0
-    h"¿Cómo has estado?, ya casi paso un mes y no te veo muy bien"
+    h"¿Cómo has estado?, ya casi a pasado más de mes"
+    h"desde la muerte de Midori y no te veo muy bien"
     show sujeto2:
         xalign 1.0
         yalign 1.0
@@ -26,6 +27,9 @@ label ruta1esc:
     h"Es más mira lo que te conseguí"
     scene calle with dissolve
     scene negro with fade
+    show mano-dro:
+        xalign 0.5
+        yalign 0.5
     menu:
         " Tomarlas":
                     jump tomar

@@ -17,6 +17,10 @@ label ruta1:
         xalign 0
         yalign 1.0
     "No me gustan las fiestas"
+    hide midori2
+    show midori3:
+        xalign 0
+        yalign 1.0
     "nunca se que hacer con las manos prefiero ver la lluvia "
     scene lluvia with dissolve
     scene negro with fade
@@ -40,15 +44,19 @@ label ruta1:
     scene negro with dissolve
     $ renpy.movie_cutscene("videos/viaje.mpg")
     "Buenos días amor…¿Amor?"
+    play sound "music/plato.mp3"
     show midori-muerta
-    "¿[a]?...Despierta"
+    "¿[a]?"
+    "...Despierta"
     scene negro with dissolve
     $ renpy.movie_cutscene("videos/reloj1.mpg")
+    play music "music/Twisted Eyes.mp3" fadein 2.0
     scene negro2 fade
     show posesion1
     s "[e], ¿Ya escucharas mi propuesta?"
     menu:
         "Escucharlo":
+                        "¿Qué debo de hacer?"
                         hide posesion1
                         jump ruta1esc
         "Cállate carajo":

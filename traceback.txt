@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/capi3-rt1.rpy", line 13, in script
-    S "Ok aquí tienes unas pistola, te puede servir "
-Exception: Sayer 'S' is not defined.
+  File "game/capi3-rt1.rpy", line 29, in script
+    jump cap4
+ScriptError: could not find label 'cap4'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/capi3-rt1.rpy", line 13, in script
-    S "Ok aquí tienes unas pistola, te puede servir "
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\ast.py", line 624, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\ast.py", line 537, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
-Exception: Sayer 'S' is not defined.
+  File "game/capi3-rt1.rpy", line 29, in script
+    jump cap4
+  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\ast.py", line 1600, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\juan\Desktop\datos de la novela\renpy-6.99.14.3-sdk\renpy\script.py", line 873, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'cap4'.
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.14.3.3347
 Cumulo 1.1
-Sat Aug 04 14:58:39 2018
+Sat Aug 04 19:12:55 2018
